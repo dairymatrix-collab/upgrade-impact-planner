@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upgrade-impact-planner"
+version = "0.1.0"
+description = "Evidence-first dependency, framework, runtime, and API upgrade impact analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "dairymatrix-collab"}]
+keywords = ["dependency upgrade", "breaking changes", "migration plan", "deprecated API", "upgrade impact analysis", "GitHub", "Agent Skill"]
+classifiers = ["Development Status :: 3 - Alpha", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Topic :: Software Development :: Libraries"]
+
+[project.scripts]
+uip = "upgrade_impact_planner.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

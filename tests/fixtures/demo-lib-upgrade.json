@@ -1,0 +1,22 @@
+{
+  "changes": [
+    {
+      "id": "demo-old-api-removed",
+      "category": "removed",
+      "summary": "The oldApi helper was removed in version 2",
+      "migration": "Replace oldApi with the newApi helper and update focused tests.",
+      "symbols": ["oldApi", "newApi"],
+      "source": "https://example.invalid/demo-lib/migration-2",
+      "confidence": 0.95
+    },
+    {
+      "id": "demo-runtime",
+      "category": "runtime",
+      "summary": "Version 2 requires Node 20",
+      "migration": "Verify CI and deployment runtimes before upgrading.",
+      "symbols": ["Node 20"],
+      "source": "https://example.invalid/demo-lib/releases/2",
+      "confidence": 0.9
+    }
+  ]
+}
